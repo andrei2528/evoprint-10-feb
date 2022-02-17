@@ -1,7 +1,21 @@
         body {
-            background-color: #d1f3e7;
+            background-color: #DBFFF3;
             letter-spacing: 3px;
             text-align: center;
+            text-decoration: none;
+            color: #BD5237;
+        }
+        
+        .strada,
+        .wp-block-jetpack-address,
+        .jetpack-address__country,
+        .wp-block-jetpack-email,
+        .wp-block-jetpack-phone,
+        .jetpack-address__region,
+        .jetpack-address__city,
+        .wp-block-jetpack-phone,
+        .wp-block-jetpack-email {
+            color: #BD5237;
             text-decoration: none;
         }
         
@@ -115,12 +129,13 @@
         }
         
         h1 {
-            font-size: 5em;
-            font-family: 'Merriweather Sans', sans-serif;
+            font-size: 6.5em;
+            font-family: 'Righteous', cursive;
+            animation: slideright 0.5s;
         }
         
         h2 {
-            color: #00647D;
+            color: #BD5237;
             font-size: 3em;
             text-align: center;
         }
