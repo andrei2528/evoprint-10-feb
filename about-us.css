@@ -7,7 +7,7 @@
 body {
     letter-spacing: 4px;
     background-color: #DB592A;
-    text-align: center
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -146,13 +146,7 @@ p {
     text-align: center;
 }
 
-#descriere p:hover {
-    opacity: 0;
-    animation-name: tada;
-    animation-duration: 1.5s;
-    animation-timing-function: ease;
-    text-align: center;
-}
+
 
 @keyframes tada {
     from {
