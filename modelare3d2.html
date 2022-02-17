@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resurse gravare\resurse gravare\gravare.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resurse gravare\resurse gravare\resurse gravare\resurse gravare\modelare3d.js" defer></script>
+    <title>evoprint sublimare</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="pubg">
+            <p class="pubg-p"><span>INOVATIA INCEPE AICI</span><br>Imprimarea 3D și fabricația aditivă în spațiul consumatorului au decolat ca o modalitate de a produce în mod durabil și economic piese și produse.<br> EvoPrint3D oferă o varietate de soluții de prototipare
+                rapidă. Prototiparea rapidă permite revizuiri și îmbunătățiri rapide. Una dintre cele mai comune și mai puțin costisitoare modalități de a vă face o idee este prin imprimarea 3D a unui prototip. </p>
+            <fieldset class="pubg-f">
+                <legend class="pubg-l">PRINTARE / MODELARE 3D</legend>
+                <img src="1-1.jpg" height="500px">
+                <button href="" id='materiale'>Vezi aici pretul minim</button>
+
+                <p id='lista-materiale'>Comanda minima : 10 euro.
+
+                </p>
+            </fieldset>
+        </div>
+
+        <div class="mafia">
+            <fieldset class="mafia-II-f">
+                <legend class="mafia-II-l">INOVATIA INCEPE AICI</legend>
+                <img src="sublimare-poza.jpg" height="500px">
+                <button id='preturi' href="https://www.oceanofgamesu.com/mafia-2-download">Vezi aici preturile</button>
+                <table class="has-fixed-layout" id='tabel'>
+                    <thead>
+                        <tr>
+                            <th class="has-text-align-center" data-align="center"> Modelare 3D </th>
+                            <th class="has-text-align-center" data-align="center"> Modelare 3D </th>
+                            <th class="has-text-align-center" data-align="center">Print 3D </th>
+                            <th class="has-text-align-center" data-align="center"> Print 3D </th>
+                            <th class="has-text-align-center" data-align="center"> Print 3D </th>
+                            <th class="has-text-align-center" data-align="center">Finisare </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Pret/ora</td>
+                            <td class="has-text-align-center" data-align="center"> Pret/ora </td>
+                            <td class="has-text-align-center" data-align="center"> Pret/ora </td>
+                            <td class="has-text-align-center" data-align="center">Pret / gram</td>
+                            <td class="has-text-align-center" data-align="center"> Pret / gram </td>
+                            <td class="has-text-align-center" data-align="center">slefuire , vopsire</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"><span class="has-inline-color has-vivid-red-color">25 Euro</span></td>
+                            <td class="has-text-align-center" data-align="center"><span class="has-inline-color has-vivid-red-color">13 Euro</span></td>
+                            <td class="has-text-align-center" data-align="center"><span class="has-inline-color has-vivid-red-color">3 Euro</span></td>
+                            <td class="has-text-align-center" data-align="center"><span class="has-inline-color has-vivid-red-color">0.1 Euro</span></td>
+                            <td class="has-text-align-center" data-align="center"><span class="has-inline-color has-vivid-red-color">0.1 – 0,5 euro</span></td>
+                            <td class="has-text-align-center" data-align="center"><span class="has-inline-color has-vivid-red-color">de la</span> <span class="has-inline-color has-vivid-red-color">10 euro</span></td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Doar model digital</td>
+                            <td class="has-text-align-center" data-align="center">model digital <br>+ print 3D</td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td class="has-text-align-center" data-align="center">PLA , ABS</td>
+                            <td class="has-text-align-center" data-align="center">alte materiale</td>
+                            <td class="has-text-align-center" data-align="center">in functie<br>de proiect</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </fieldset>
+            <p class="mafia-p">Chiar dacă produsul final este realizat din metal, lemn sau alt material, imprimarea 3D permite o revizuire mai rapidă și costuri reduse.<br> EvoPrint3D are în prezent patru imprimante 3D care permit tipărirea în serie și permite împărțirea
+                tipăririlor în tiraje mai mici și mai rapide. De asemenea, oferim tăiere cu laser și prototipare CNC.</p>
+        </div>
+    </section>
+    <script>
+        var btnMateriale = document.getElementById('materiale');
+        var btnPreturi = document.getElementById('preturi');
+        var tabel = document.getElementById('tabel');
+        var listaMateriale = document.getElementById('lista-materiale');
+        var chenarMateriale = document.getElementsByClassName('pubg-f');
+        var chenarLista = document.getElementsByClassName('mafia-II-f');
+
+
+
+        btnMateriale.onclick = function() {
+            if (listaMateriale.style.display !== "none") {
+                listaMateriale.style.display = "none";
+
+
+            } else {
+                listaMateriale.style.display = "block";
+                chenarMateriale.style.height = '200vh';
+            }
+        }
+        btnPreturi.onclick = function() {
+            if (tabel.style.display !== "none") {
+                tabel.style.display = "none";
+
+
+            } else {
+                tabel.style.display = "block";
+                chenarLista.style.height = '100vh';
+            }
+        }
+    </script>
+
+</body>
