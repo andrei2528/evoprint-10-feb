@@ -18,30 +18,34 @@ section {
 }
 
 @media only screen and (max-width:600px) {
+    legend {
+        font-size: 0.6em !important;
+    }
     p {
-        font-size: 32px;
+        font-size: 2.2vw !important;
     }
     img {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
     .pubg {
         height: 30em;
     }
-    .pubg p {
-        height: 300px;
+    .pubg-p,
+    .mafia-p {
+        height: 170px;
     }
-    .pubg-f button {
-        width: 50px;
-        height: 30px;
+    .pubg-f button,
+    .mafia-II-f button {
+        width: 70px !important;
+        height: 35px !important;
         margin: 15px;
-        padding: 5px;
-        font-size: 0.8em;
+        font-size: 0.4em !important;
     }
     .pubg-f {
         margin: auto;
         width: 60vw;
-        height: 60vh;
+        height: 50vh !important;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -49,26 +53,25 @@ section {
         margin-right: 50px;
     }
     .pubg-f {
-        margin-top: 35vh;
-        margin-left: 5vh;
+        margin-top: 25vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
     }
     .mafia-II-f {
         margin: auto;
-        width: 50vw;
+        width: 60vw;
         height: 60vh;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 50px;
-        bottom: 30em;
-    }
-    .mafia-II-f button {
-        width: 60px;
-        height: 40px;
         margin: 15px;
-        padding: 5px;
-        font-size: 1em;
+        bottom: 30em;
+        top: 10em;
+        margin-left: 2em;
+    }
+    .mafia {
+        height: 30em !important;
     }
     #lista-materiale {
         font-size: 0.4em;
@@ -82,10 +85,10 @@ section {
 
 @media only screen and (min-width:601px) {
     .pubg {
-        height: 190vh;
+        height: 160vh;
     }
     .pubg p {
-        height: 700px;
+        height: 150px;
     }
 }
 
@@ -103,7 +106,6 @@ section {
     top: 90vh;
     letter-spacing: 3px;
     font-size: 1.5vw;
-    margin-top: 35vh;
 }
 
 .pubg-p span {
@@ -118,19 +120,6 @@ section {
     align-items: center;
     flex-direction: column;
     margin-right: 50px;
-}
-
-.pubg-f button {
-    width: 100px;
-    height: 50px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: #5b78c7;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1vw;
-    color: #fff;
 }
 
 img {
@@ -173,16 +162,17 @@ img {
     margin: 50px;
 }
 
-.mafia-II-f button {
-    width: 100px;
-    height: 50px;
-    margin: 10px;
+.mafia-II-f button,
+.pubg-f button {
+    width: 200px;
+    height: 80px;
+    margin: 20px;
     border-radius: 10px;
     background-color: #5b78c7;
     outline: none;
     border: none;
     cursor: pointer;
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: #fff;
 }
 
